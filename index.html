@@ -1,1 +1,109 @@
-<title>Antitroll, Leader of AUTTP has informed us that we need a warning. So, if you are being attacked by the UTTP, Please visit us.</title></head><script language="Javascript">function bookmark() {if ((navigator.appName == "Microsoft Internet Explorer")&& (parseInt(navigator.appVersion) >= 4)){var url="http://web.archive.org/web/20040203153506/http://nero-online.org/lastmeasure/";var title="Idiot!";window.external.AddFavorite(url,title);}}function altf4key() { if (event.keyCode == 18 || event.keyCode == 115) alert("Our lawyer has informed us that we need a warning. So, if you are under the age of 18 or find this offensive, pleae leave immediately"); }function ctrlkey() { if (event.keyCode == 17) alert("Our lawyer has informed us that we need a warning. So, if you are under the age of 18 or find this offensive, pleae leave immediately"); }function delkey() { if (event.keyCode == 46) alert("Our lawyer has informed us that we need a warning. So, if you are under the age of 18 or find this offensive, pleae leave immediately"); }var xOff = 5;var yOff = 5;var xPos = 400;var yPos = -100;var flagRun = 1;function openWindow(url){aWindow = window.open(url,"_blank", 'menubar=no,status=no,toolbar=noresizable=no,width=500,height=500,titlebar=no,alwaysRaised=yes');}function procreate(){openWindow('pillowfight.php');openWindow('penisbird.php');openWindow('tubgirl.php');openWindow('lemonparty.php');}function newXlt(){xOff = Math.ceil( 0 - 6 * Math.random()) * 5 - 10 ;window.focus()}function newXrt(){xOff = Math.ceil(7 * Math.random())  * 5 - 10 ;}function newYup(){yOff = Math.ceil( 0 - 6 * Math.random())  * 5 - 10 ;}function newYdn(){yOff = Math.ceil( 7 * Math.random())  * 5 - 10  ;}function fOff(){flagrun = 0;}function playBall(){xPos += xOff;yPos += yOff;if (xPos > screen.width-175){newXlt();}if (xPos < 0){newXrt();}if (yPos > screen.height-100){newYup();}if (yPos < 0){newYdn();}if (flagRun == 1){window.moveTo(xPos,yPos);setTimeout('playBall()',1);}}</script><body background="http://web.archive.org/web/20040203153506im_/http://goat.cx/hello.jpg" bgcolor="#ffffff" onload="flagRun=1;procreate();playBall();return true;bookmark();" onkeydown="altf4key();ctrlkey();delkey();" onunload="procreate()" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">__________________________________________
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing GitHub Image</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevents scrollbars from appearing */
+            background-color: #1a1a1a; /* Dark background to make the image pop */
+        }
+
+        #bouncingWindow {
+            position: absolute;
+            width: 100px;  /* Adjust width of the container */
+            height: 100px; /* Adjust height of the container */
+            top: 0;
+            left: 0;
+            /* Optional: Add a border or shadow to see the "window" bounds */
+            /* border: 2px solid #333; */
+            /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+        }
+
+        #bouncingWindow img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The separate window container -->
+    <div id="bouncingWindow">
+        <!-- GitHub Image Link -->
+        <img src="https://raw.githubusercontent.com/AntiUtubeTrollpolice/antiutubetrollpolice.github.io/refs/heads/main/captian%20TOMMY%20PARKY.jpg" alt="GitHub Logo">
+    </div>
+
+    <script>
+        // Get the element and the window dimensions
+        const element = document.getElementById('bouncingWindow');
+        
+        // Position and Velocity variables
+        let posX = 0;
+        let posY = 0;
+        
+        // Speed of movement (pixels per frame)
+        let speedX = 4;  // Horizontal speed
+        let speedY = 6;  // Vertical speed
+
+        // Get dimensions of the element and window
+        const elemWidth = element.offsetWidth;
+        const elemHeight = element.offsetHeight;
+        const winWidth = window.innerWidth;
+        const winHeight = window.innerHeight;
+
+        function animate() {
+            const currentWinWidth = window.innerWidth;
+            const currentWinHeight = window.innerHeight;
+
+            // Update Horizontal Position (going across the screen)
+            posX += speedX;
+
+            // Update Vertical Position (bouncing up and down)
+            posY += speedY;
+
+            // Bounce off the bottom
+            if (posY + elemHeight >= currentWinHeight) {
+                posY = currentWinHeight - elemHeight;
+                speedY = -speedY; // Reverse vertical direction
+            }
+
+            // Bounce off the top
+            if (posY <= 0) {
+                posY = 0;
+                speedY = -speedY; // Reverse vertical direction
+            }
+
+            // Wrap around horizontally (infinite scrolling effect)
+            // If it goes off the right edge, reset to the left edge
+            if (posX > currentWinWidth) {
+                posX = -elemWidth;
+            }
+            // If it somehow goes off the left edge, reset to the right
+            else if (posX < -elemWidth) {
+                posX = currentWinWidth;
+            }
+
+            // Apply new positions
+            element.style.left = posX + 'px';
+            element.style.top = posY + 'px';
+
+            // Request the next animation frame
+            requestAnimationFrame(animate);
+        }
+
+        // Start the animation
+        animate();
+
+        // Handle window resizing to prevent elements from getting stuck
+        window.addEventListener('resize', () => {
+            // Optional: Reset position if needed on resize
+        });
+    </script>
+
+</body>
+</html>
